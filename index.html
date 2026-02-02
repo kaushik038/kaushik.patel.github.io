@@ -53,7 +53,7 @@
                 <h2 class="text-blue-500 font-mono mb-4 text-lg">Senior Software Engineer</h2>
                 <h1 class="text-6xl md:text-8xl font-extrabold mb-6 tracking-tight text-white">Kaushik Patel</h1>
                 <p class="text-xl text-slate-400 mb-8 leading-relaxed max-w-xl">
-                    Turning complex ideas into scalable code with <span class="text-blue-400"><span class="exp-years">8</span></span> years</span> of expertise in building high-performance <span class="text-blue-400">Mobile & TV</span> ecosystems.
+                    Turning complex ideas into scalable code with <span class="text-blue-400"><span class="exp-years">7.7</span></span> years</span> of expertise in building high-performance <span class="text-blue-400">Mobile & TV</span> ecosystems.
                 </p>
                 <div class="flex flex-wrap gap-4">
                     <div class="flex items-center gap-2 bg-slate-800/40 px-4 py-2 rounded-lg border border-white/5 shadow-xl"><i class="fab fa-react text-blue-400"></i> React Native</div>
@@ -293,38 +293,9 @@
                 </a>
              </div>
         <div class="mt-16 text-center text-slate-700 text-[10px] uppercase tracking-[0.25em] font-bold">
-            &copy; 2026 Kaushik Patel // <span class="exp-years">8</span> Years Experience // Senior RN Engineer
+            &copy; 2026 Kaushik Patel // <span class="exp-years">7.7</span> Years Experience // Senior RN Engineer
         </div>
     </footer>
-<script>
-        function calculateExperience() {
-            // Start Date: Feb 2018 (Month is 0-indexed, so 1 = Feb)
-            const startDate = new Date(2018, 1, 1);
-            const today = new Date(2025,11,31);
-            
-            let years = today.getFullYear() - startDate.getFullYear();
-            let months = today.getMonth() - startDate.getMonth();
 
-            // Adjust years if current month is before start month
-            if (months < 0 || (months === 0 && today.getDate() < startDate.getDate())) {
-                years--;
-                months += 12;
-            }
-
-            // Format as "Years.Months" (e.g., 7.11)
-            const totalExp = months > 0 ? `${years}.${months}` : `${years}`;
-
-            // Update all elements with class 'exp-years'
-            document.querySelectorAll('.exp-years').forEach(el => {
-                el.innerText = totalExp;
-            });
-
-            // Update footer copyright year
-            document.getElementById('copyright-year').innerText = today.getFullYear();
-        }
-
-        // Run calculation
-        calculateExperience();
-    </script>
 </body>
 </html>
